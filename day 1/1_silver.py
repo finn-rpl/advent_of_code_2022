@@ -1,5 +1,5 @@
 
-with open('puzzle_input.txt', 'r') as f:
+with open('1_puzzle_input.txt', 'r') as f:
     elves = f.read().strip('\n\n').split('\n\n')
 
 calories = [
