@@ -14,7 +14,7 @@ for lu in range(len(you_lk)):
     you[(puzzle_input[:, 1] == you_lk[lu])] = lu
 
 # figure out scores
-x = np.subtract(opp, you)
+x = opp - you
 score = sum(you+1) + sum((x == 0)*3) + sum(((x == -1) + (x == 2))*6)
 
 print(score)
